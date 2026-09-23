@@ -16,10 +16,12 @@ import {
   ArrowRight,
   ShieldCheck,
 } from "lucide-react";
-import heroTurbine from "@/assets/hero-turbine.jpg";
-import qualityImg from "@/assets/quality-detail.jpg";
-import processImg from "@/assets/industry-process.jpg";
-import machiningImg from "@/assets/product-machining.jpg";
+import svcBuilding from "@/assets/svc-building-construction.jpg";
+import svcFacility from "@/assets/svc-facility-management.jpg";
+import svcOilGas from "@/assets/svc-oil-gas.jpg";
+import svcEnergy from "@/assets/svc-energy-utilities.jpg";
+import svcMep from "@/assets/svc-mep-services.jpg";
+import svcWelding from "@/assets/svc-welding-fabrication.jpg";
 
 export const Route = createFileRoute("/services")({
   head: () => ({
@@ -48,13 +50,13 @@ const serviceIcons: Record<string, typeof Building2> = {
 };
 
 const serviceImages: Record<string, string> = {
-  "building-construction": heroTurbine,
-  "facility-management": machiningImg,
-  "oil-gas": processImg,
-  "energy-utilities": qualityImg,
-  "mep-services": machiningImg,
-  "welding-fabrication": processImg,
-  "technical-support": heroTurbine,
+  "building-construction": svcBuilding,
+  "facility-management": svcFacility,
+  "oil-gas": svcOilGas,
+  "energy-utilities": svcEnergy,
+  "mep-services": svcMep,
+  "welding-fabrication": svcWelding,
+  "technical-support": svcBuilding,
 };
 
 function ServicesPage() {

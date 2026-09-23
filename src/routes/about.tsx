@@ -43,7 +43,7 @@ function AboutPage() {
               className="aspect-[4/3] w-full object-cover opacity-90"
             />
             <div className="absolute bottom-3 left-3 right-3 bg-black/85 backdrop-blur-md p-3.5 border border-zinc-800 text-white rounded-xs">
-              <div className="text-xs font-mono uppercase text-[rgb(220,100,100)] font-bold">
+              <div className="text-xs font-mono uppercase text-[#60a5fa] font-bold">
                 Shield Global Technical Services LLC
               </div>
               <div className="text-[11px] text-zinc-300">
@@ -54,7 +54,7 @@ function AboutPage() {
         </Reveal>
 
         <Reveal className="space-y-4">
-          <div className="inline-flex items-center gap-2 px-3 py-1 bg-[rgba(128,0,0,0.08)] text-[rgb(128,0,0)] border border-[rgba(128,0,0,0.2)] text-[11px] font-bold uppercase tracking-[0.16em] rounded-xs">
+          <div className="inline-flex items-center gap-2 px-3 py-1 bg-[#0f4ba1]/10 text-[#0f4ba1] border border-[#0f4ba1]/20 text-[11px] font-bold uppercase tracking-[0.16em] rounded-xs">
             Corporate Overview
           </div>
           <h2 className="font-display text-3xl sm:text-4xl md:text-5xl font-extrabold leading-tight text-foreground tracking-tight">
@@ -71,14 +71,14 @@ function AboutPage() {
               "Uncompromising adherence to safety standards and client project timelines",
             ].map((pt, i) => (
               <div key={i} className="flex items-start gap-2.5 text-xs sm:text-sm">
-                <CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-[rgb(128,0,0)]" />
+                <CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-[#0f4ba1]" />
                 <span className="text-foreground font-medium">{pt}</span>
               </div>
             ))}
           </div>
           <div className="pt-3 flex flex-wrap gap-3">
             <QuoteModal>
-              <Button variant="default" size="default" className="bg-[rgb(128,0,0)] hover:bg-[rgb(150,15,15)] text-white font-bold uppercase tracking-wider text-xs shadow-md rounded-xs">
+              <Button variant="default" size="default" className="bg-[#0f4ba1] hover:bg-[#1358be] text-white font-bold uppercase tracking-wider text-xs shadow-md rounded-xs">
                 Request a Quotation
               </Button>
             </QuoteModal>
@@ -92,7 +92,7 @@ function AboutPage() {
       {/* Core Values */}
       <section className="border-t border-border bg-slate-50/70 py-10 sm:py-12 md:py-14">
         <div className="technical-container">
-          <div className="inline-flex items-center gap-2 px-3 py-1 bg-[rgba(128,0,0,0.08)] text-[rgb(128,0,0)] border border-[rgba(128,0,0,0.2)] text-[11px] font-bold uppercase tracking-[0.16em] rounded-xs">
+          <div className="inline-flex items-center gap-2 px-3 py-1 bg-[#0f4ba1]/10 text-[#0f4ba1] border border-[#0f4ba1]/20 text-[11px] font-bold uppercase tracking-[0.16em] rounded-xs">
             Core Pillars
           </div>
           <h2 className="mt-2 font-display text-3xl sm:text-4xl md:text-5xl font-extrabold text-foreground tracking-tight">Our Operating Principles</h2>
@@ -115,12 +115,12 @@ function AboutPage() {
               },
             ].map((item, index) => (
               <Reveal key={item.title}>
-                <div className="border border-border bg-white p-6 space-y-3 h-full transition-all hover:border-[rgb(128,0,0)] hover:shadow-lg rounded-xs">
+                <div className="border border-border bg-white p-6 space-y-3 h-full transition-all hover:border-[#0f4ba1] hover:shadow-lg rounded-xs">
                   <div className="flex items-center justify-between">
-                    <span className="flex h-10 w-10 items-center justify-center bg-[rgba(128,0,0,0.08)] text-[rgb(128,0,0)] rounded-xs">
+                    <span className="flex h-10 w-10 items-center justify-center bg-[#0f4ba1]/10 text-[#0f4ba1] rounded-xs">
                       <item.icon className="h-5 w-5" />
                     </span>
-                    <span className="text-xs font-mono font-bold text-[rgb(128,0,0)]">0{index + 1}</span>
+                    <span className="text-xs font-mono font-bold text-[#0f4ba1]">0{index + 1}</span>
                   </div>
                   <h3 className="font-display text-xl sm:text-2xl font-bold text-foreground">{item.title}</h3>
                   <p className="text-xs sm:text-sm leading-relaxed text-muted-foreground">{item.desc}</p>

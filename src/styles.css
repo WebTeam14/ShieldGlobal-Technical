@@ -71,33 +71,33 @@
   --card-foreground: #0f172a;
   --popover: #ffffff;
   --popover-foreground: #0f172a;
-  --primary: rgb(128, 0, 0);
+  --primary: #0f4ba1;
   --primary-foreground: #ffffff;
   --secondary: #f8fafc;
   --secondary-foreground: #0f172a;
   --muted: #f1f5f9;
   --muted-foreground: #64748b;
-  --accent: rgb(128, 0, 0);
+  --accent: #0f4ba1;
   --accent-foreground: #ffffff;
-  --destructive: rgb(128, 0, 0);
+  --destructive: #0f4ba1;
   --destructive-foreground: #ffffff;
   --border: #e2e8f0;
   --input: #e2e8f0;
-  --ring: rgb(128, 0, 0);
+  --ring: #0f4ba1;
   --hero-foreground: #ffffff;
-  --chart-1: rgb(128, 0, 0);
+  --chart-1: #0f4ba1;
   --chart-2: #1e293b;
   --chart-3: #475569;
   --chart-4: #94a3b8;
-  --chart-5: rgb(128, 0, 0);
+  --chart-5: #0f4ba1;
   --sidebar: #ffffff;
   --sidebar-foreground: #0f172a;
-  --sidebar-primary: rgb(128, 0, 0);
+  --sidebar-primary: #0f4ba1;
   --sidebar-primary-foreground: #ffffff;
   --sidebar-accent: #f8fafc;
   --sidebar-accent-foreground: #0f172a;
   --sidebar-border: #e2e8f0;
-  --sidebar-ring: rgb(128, 0, 0);
+  --sidebar-ring: #0f4ba1;
 }
 
 .dark {
@@ -107,32 +107,32 @@
   --card-foreground: #f8fafc;
   --popover: #111111;
   --popover-foreground: #f8fafc;
-  --primary: rgb(160, 20, 20);
+  --primary: #1d68d8;
   --primary-foreground: #ffffff;
   --secondary: #1a1a1a;
   --secondary-foreground: #f8fafc;
   --muted: #1e293b;
   --muted-foreground: #94a3b8;
-  --accent: rgb(160, 20, 20);
+  --accent: #1d68d8;
   --accent-foreground: #ffffff;
-  --destructive: rgb(160, 20, 20);
+  --destructive: #1d68d8;
   --destructive-foreground: #ffffff;
   --border: #262626;
   --input: #262626;
-  --ring: rgb(160, 20, 20);
-  --chart-1: rgb(160, 20, 20);
+  --ring: #1d68d8;
+  --chart-1: #1d68d8;
   --chart-2: #e2e8f0;
   --chart-3: #94a3b8;
   --chart-4: #64748b;
-  --chart-5: rgb(160, 20, 20);
+  --chart-5: #1d68d8;
   --sidebar: #0f172a;
   --sidebar-foreground: #f8fafc;
-  --sidebar-primary: rgb(160, 20, 20);
+  --sidebar-primary: #1d68d8;
   --sidebar-primary-foreground: #ffffff;
   --sidebar-accent: #1e293b;
   --sidebar-accent-foreground: #f8fafc;
   --sidebar-border: #262626;
-  --sidebar-ring: rgb(160, 20, 20);
+  --sidebar-ring: #1d68d8;
 }
 
 @layer base {

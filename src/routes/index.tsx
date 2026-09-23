@@ -21,9 +21,11 @@ import {
 } from "lucide-react";
 import heroTurbine from "@/assets/hero-turbine.jpg";
 import qualityImg from "@/assets/quality-detail.jpg";
-import processImg from "@/assets/industry-process.jpg";
-import machiningImg from "@/assets/product-machining.jpg";
-import valveImg from "@/assets/product-valve.jpg";
+import serviceBuilding from "@/assets/service-building-construction.jpg";
+import serviceFacility from "@/assets/service-facility-management.jpg";
+import serviceOilGas from "@/assets/service-oil-gas.jpg";
+import serviceEnergy from "@/assets/service-energy-utilities.jpg";
+import serviceMep from "@/assets/service-mep.jpg";
 import { Reveal } from "@/components/reveal";
 import { Button } from "@/components/ui/button";
 import { QuoteModal } from "@/components/quote-modal";
@@ -57,7 +59,7 @@ const mainPillars = [
     title: "Building Construction",
     tagline: "Civil & Structural Excellence",
     desc: "Civil construction, renovation, structural works, finishing and project support.",
-    image: heroTurbine,
+    image: serviceBuilding,
     icon: Building2,
     slug: "building-construction",
     features: ["Civil & Structural Works", "Commercial & Industrial Buildings", "Renovation & Fit-out", "Turnkey Finishing"],
@@ -67,7 +69,7 @@ const mainPillars = [
     title: "Facility Management",
     tagline: "Total Asset Lifecycle Care",
     desc: "Hard FM, technical maintenance, MEP maintenance, building services and facility support.",
-    image: machiningImg,
+    image: serviceFacility,
     icon: Wrench,
     slug: "facility-management",
     features: ["Hard FM Solutions", "Planned Preventive Maintenance (PPM)", "Building Automation & HVAC", "24/7 Operations Support"],
@@ -77,7 +79,7 @@ const mainPillars = [
     title: "Oil & Gas",
     tagline: "Onshore & Offshore Operations",
     desc: "Onshore & offshore technical services, maintenance, shutdown, turnaround and project support.",
-    image: processImg,
+    image: serviceOilGas,
     icon: Flame,
     slug: "oil-gas",
     features: ["Pipeline & Plant Maintenance", "Offshore & Onshore Support", "Shutdown Management", "API & ASME Code Compliance"],
@@ -87,7 +89,7 @@ const mainPillars = [
     title: "Energy & Utilities",
     tagline: "Power & Grid Infrastructure",
     desc: "Technical services and maintenance support for power, water, energy and utility infrastructure.",
-    image: qualityImg,
+    image: serviceEnergy,
     icon: Zap,
     slug: "energy-utilities",
     features: ["Substation & Grid Installations", "Water & Wastewater Systems", "Renewable & Solar Support", "HV / MV Cabling & Testing"],
@@ -97,7 +99,7 @@ const mainPillars = [
     title: "MEP Services",
     tagline: "Integrated Systems & Controls",
     desc: "Mechanical, electrical, HVAC, plumbing, BMS and associated building systems.",
-    image: valveImg,
+    image: serviceMep,
     icon: Cpu,
     slug: "mep-services",
     features: ["HVAC & Chilled Water Piping", "Fire Fighting & Alarm Systems", "Electrical Distribution & LV", "BMS & Smart Building Setup"],
@@ -163,7 +165,7 @@ function SlidingHeroWord() {
           animate={{ y: "0%", opacity: 1 }}
           exit={{ y: "-110%", opacity: 0 }}
           transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
-          className="inline-block text-[rgb(220,50,50)] font-black drop-shadow-[0_2px_14px_rgba(128,0,0,0.65)]"
+          className="inline-block text-[#38bdf8] font-black drop-shadow-[0_2px_14px_rgba(15,75,161,0.65)]"
         >
           {heroWords[index]}
         </motion.span>
@@ -191,10 +193,10 @@ function HomePage() {
           />
         </motion.div>
         
-        {/* Tech Grid Gradient Overlays & Deep Red Glow */}
+        {/* Tech Grid Gradient Overlays & Deep Blue Glow */}
         <div className="absolute inset-0 bg-gradient-to-r from-[#080808] via-[#080808]/90 to-[#080808]/50 sm:to-transparent" />
         <div className="absolute inset-0 bg-gradient-to-t from-[#080808] via-transparent to-[#080808]/50" />
-        <div className="absolute top-1/4 right-1/4 h-96 w-96 rounded-full bg-[rgb(128,0,0)]/15 blur-[120px] pointer-events-none" />
+        <div className="absolute top-1/4 right-1/4 h-96 w-96 rounded-full bg-[#0f4ba1]/20 blur-[120px] pointer-events-none" />
 
         {/* Hero Content */}
         <div className="technical-container relative z-10 flex flex-1 flex-col justify-center pb-8 pt-28 sm:pt-32 lg:pb-12 lg:pt-36">
@@ -203,9 +205,9 @@ function HomePage() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            className="inline-flex items-center gap-2.5 border border-[rgb(128,0,0)]/50 bg-[rgb(128,0,0)]/20 px-3.5 py-1.5 backdrop-blur-md self-start rounded-xs"
+            className="inline-flex items-center gap-2.5 border border-[#0f4ba1]/50 bg-[#0f4ba1]/20 px-3.5 py-1.5 backdrop-blur-md self-start rounded-xs"
           >
-            <Shield className="h-4 w-4 text-[rgb(128,0,0)]" />
+            <Shield className="h-4 w-4 text-[#0f4ba1]" />
             <span className="text-[11px] sm:text-xs font-bold uppercase tracking-[0.2em] text-white">
               SHIELD GLOBAL TECHNICAL SERVICES LLC
             </span>
@@ -256,7 +258,7 @@ function HomePage() {
               <Button
                 variant="default"
                 size="lg"
-                className="bg-[rgb(128,0,0)] hover:bg-[rgb(150,15,15)] text-white text-xs uppercase tracking-widest font-bold px-7 py-5 shadow-xl shadow-[rgba(128,0,0,0.35)] rounded-xs"
+                className="bg-[#0f4ba1] hover:bg-[#1358be] text-white text-xs uppercase tracking-widest font-bold px-7 py-5 shadow-xl shadow-[rgba(15,75,161,0.35)] rounded-xs"
               >
                 Request a Quotation
               </Button>
@@ -268,19 +270,19 @@ function HomePage() {
         <div className="relative z-10 border-t border-zinc-800/90 bg-[#080808]/90 backdrop-blur-md py-3.5">
           <div className="technical-container grid grid-cols-2 gap-3 sm:grid-cols-4 text-zinc-300 text-[10px] sm:text-xs font-mono uppercase tracking-[0.14em]">
             <div className="flex items-center gap-2">
-              <ShieldCheck className="h-4 w-4 text-[rgb(128,0,0)] shrink-0" />
+              <ShieldCheck className="h-4 w-4 text-[#0f4ba1] shrink-0" />
               <span>Safety & QA/QC Verified</span>
             </div>
             <div className="flex items-center gap-2">
-              <Building2 className="h-4 w-4 text-[rgb(128,0,0)] shrink-0" />
+              <Building2 className="h-4 w-4 text-[#0f4ba1] shrink-0" />
               <span>Civil & MEP Contracting</span>
             </div>
             <div className="flex items-center gap-2">
-              <Flame className="h-4 w-4 text-[rgb(128,0,0)] shrink-0" />
+              <Flame className="h-4 w-4 text-[#0f4ba1] shrink-0" />
               <span>Oil & Gas / Energy Specs</span>
             </div>
             <div className="flex items-center gap-2">
-              <CheckCircle2 className="h-4 w-4 text-[rgb(128,0,0)] shrink-0" />
+              <CheckCircle2 className="h-4 w-4 text-[#0f4ba1] shrink-0" />
               <span>UAE & Regional Execution</span>
             </div>
           </div>
@@ -292,7 +294,7 @@ function HomePage() {
         <div className="technical-container">
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 pb-4 border-b border-border">
             <div>
-              <div className="section-label text-[rgb(128,0,0)] font-bold tracking-[0.16em]">
+              <div className="section-label text-[#0f4ba1] font-bold tracking-[0.16em]">
                 Multi-Disciplinary Capabilities
               </div>
               <h2 className="mt-2 font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight text-foreground">
@@ -310,7 +312,7 @@ function HomePage() {
               return (
                 <article
                   key={pillar.number}
-                  className="group relative flex flex-col justify-between border border-border bg-card p-6 shadow-xs transition-all duration-300 hover:border-[rgb(128,0,0)] hover:shadow-xl rounded-xs"
+                  className="group relative flex flex-col justify-between border border-border bg-card p-6 shadow-xs transition-all duration-300 hover:border-[#0f4ba1] hover:shadow-xl rounded-xs"
                 >
                   <div className="space-y-4">
                     <div className="relative aspect-[16/10] overflow-hidden bg-black rounded-xs">
@@ -326,14 +328,14 @@ function HomePage() {
 
                     <div className="space-y-1.5">
                       <div className="flex items-center gap-2">
-                        <span className="flex h-7 w-7 items-center justify-center bg-[rgba(128,0,0,0.1)] text-[rgb(128,0,0)] border border-[rgba(128,0,0,0.25)] rounded-xs">
+                        <span className="flex h-7 w-7 items-center justify-center bg-[#0f4ba1]/10 text-[#0f4ba1] border border-[#0f4ba1]/25 rounded-xs">
                           <IconComp className="h-3.5 w-3.5" />
                         </span>
-                        <span className="text-[11px] uppercase tracking-wider font-bold text-[rgb(128,0,0)]">
+                        <span className="text-[11px] uppercase tracking-wider font-bold text-[#0f4ba1]">
                           {pillar.tagline}
                         </span>
                       </div>
-                      <h3 className="font-display text-xl sm:text-2xl font-bold text-foreground group-hover:text-[rgb(128,0,0)] transition-colors">
+                      <h3 className="font-display text-xl sm:text-2xl font-bold text-foreground group-hover:text-[#0f4ba1] transition-colors">
                         {pillar.title}
                       </h3>
                       <p className="text-xs sm:text-sm text-muted-foreground leading-relaxed">
@@ -348,7 +350,7 @@ function HomePage() {
                       <ul className="space-y-1">
                         {pillar.features.map((feat, fIdx) => (
                           <li key={fIdx} className="flex items-center gap-2 text-xs text-muted-foreground">
-                            <CheckCircle2 className="h-3.5 w-3.5 text-[rgb(128,0,0)] shrink-0" />
+                            <CheckCircle2 className="h-3.5 w-3.5 text-[#0f4ba1] shrink-0" />
                             <span>{feat}</span>
                           </li>
                         ))}
@@ -360,7 +362,7 @@ function HomePage() {
                     <Link
                       to="/services"
                       hash={pillar.slug}
-                      className="text-xs uppercase tracking-wider font-bold text-foreground group-hover:text-[rgb(128,0,0)] flex items-center gap-1.5 transition-colors"
+                      className="text-xs uppercase tracking-wider font-bold text-foreground group-hover:text-[#0f4ba1] flex items-center gap-1.5 transition-colors"
                     >
                       Explore Service <ArrowUpRight className="h-3.5 w-3.5" />
                     </Link>
@@ -368,7 +370,7 @@ function HomePage() {
                       <Button
                         variant="outline"
                         size="sm"
-                        className="text-[11px] uppercase tracking-wider font-bold border-border hover:border-[rgb(128,0,0)] hover:bg-[rgb(128,0,0)] hover:text-white"
+                        className="text-[11px] uppercase tracking-wider font-bold border-border hover:border-[#0f4ba1] hover:bg-[#0f4ba1] hover:text-white"
                       >
                         Quote
                       </Button>
@@ -386,7 +388,7 @@ function HomePage() {
         <div className="technical-container">
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 pb-4 border-b border-border">
             <div>
-              <div className="section-label text-[rgb(128,0,0)] font-bold tracking-[0.16em]">
+              <div className="section-label text-[#0f4ba1] font-bold tracking-[0.16em]">
                 Specialized Technical Services
               </div>
               <h2 className="mt-2 font-display text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight text-foreground">
@@ -404,14 +406,14 @@ function HomePage() {
               return (
                 <div
                   key={idx}
-                  className="flex flex-col justify-between border border-border bg-white p-5 shadow-xs transition-all duration-300 hover:border-[rgb(128,0,0)] hover:shadow-lg rounded-xs"
+                  className="flex flex-col justify-between border border-border bg-white p-5 shadow-xs transition-all duration-300 hover:border-[#0f4ba1] hover:shadow-lg rounded-xs"
                 >
                   <div className="space-y-3">
-                    <span className="flex h-10 w-10 items-center justify-center bg-[rgba(128,0,0,0.08)] text-[rgb(128,0,0)] border border-[rgba(128,0,0,0.2)] rounded-xs">
+                    <span className="flex h-10 w-10 items-center justify-center bg-[#0f4ba1]/10 text-[#0f4ba1] border border-[#0f4ba1]/20 rounded-xs">
                       <IconComp className="h-5 w-5" />
                     </span>
                     <div>
-                      <span className="text-[10.5px] uppercase tracking-wider font-bold text-[rgb(128,0,0)]">
+                      <span className="text-[10.5px] uppercase tracking-wider font-bold text-[#0f4ba1]">
                         {srv.badge}
                       </span>
                       <h3 className="mt-1 font-display text-lg font-bold text-foreground">
@@ -425,7 +427,7 @@ function HomePage() {
                   <div className="pt-4 mt-3 border-t border-slate-100">
                     <Link
                       to={srv.link}
-                      className="text-xs uppercase tracking-wider font-bold text-foreground hover:text-[rgb(128,0,0)] flex items-center gap-1.5 transition-colors"
+                      className="text-xs uppercase tracking-wider font-bold text-foreground hover:text-[#0f4ba1] flex items-center gap-1.5 transition-colors"
                     >
                       Learn More <ArrowRight className="h-3 w-3" />
                     </Link>
@@ -442,32 +444,32 @@ function HomePage() {
         <div className="technical-container">
           <div className="grid gap-10 lg:grid-cols-12 lg:items-center">
             <div className="space-y-5 lg:col-span-7">
-              <div className="section-label text-[rgb(180,40,40)] font-bold tracking-[0.18em]">HSEQ & Quality Standards</div>
+              <div className="section-label text-[#3b82f6] font-bold tracking-[0.18em]">HSEQ & Quality Standards</div>
               <h2 className="font-display text-3xl sm:text-5xl lg:text-6xl font-extrabold leading-[1.04] text-white tracking-tight">
                 Rigorous Safety Culture. <br />
-                <span className="text-[rgb(180,40,40)] font-black">Zero-Compromise Quality.</span>
+                <span className="text-[#3b82f6] font-black">Zero-Compromise Quality.</span>
               </h2>
               <p className="text-xs sm:text-sm leading-relaxed text-zinc-300 max-w-xl">
                 Every project executed by Shield Global Technical Services LLC adheres strictly to international engineering standards and regional regulatory requirements. We provide complete transparency through Inspection Test Plans (ITP), Material Test Certificates (MTC), and certified QA/QC oversight.
               </p>
 
               <div className="grid gap-3.5 pt-2 sm:grid-cols-3">
-                <div className="border border-zinc-800 bg-zinc-900/90 p-3.5 backdrop-blur-sm rounded-xs hover:border-[rgb(128,0,0)] transition-colors">
-                  <div className="font-display text-xl sm:text-2xl text-[rgb(180,40,40)] font-extrabold">QA / QC</div>
+                <div className="border border-zinc-800 bg-zinc-900/90 p-3.5 backdrop-blur-sm rounded-xs hover:border-[#0f4ba1] transition-colors">
+                  <div className="font-display text-xl sm:text-2xl text-[#3b82f6] font-extrabold">QA / QC</div>
                   <div className="text-[10px] sm:text-[11px] text-zinc-400 uppercase tracking-wider mt-1">Quality Management</div>
                 </div>
-                <div className="border border-zinc-800 bg-zinc-900/90 p-3.5 backdrop-blur-sm rounded-xs hover:border-[rgb(128,0,0)] transition-colors">
-                  <div className="font-display text-xl sm:text-2xl text-[rgb(180,40,40)] font-extrabold">HSE Plan</div>
+                <div className="border border-zinc-800 bg-zinc-900/90 p-3.5 backdrop-blur-sm rounded-xs hover:border-[#0f4ba1] transition-colors">
+                  <div className="font-display text-xl sm:text-2xl text-[#3b82f6] font-extrabold">HSE Plan</div>
                   <div className="text-[10px] sm:text-[11px] text-zinc-400 uppercase tracking-wider mt-1">Health & Safety</div>
                 </div>
-                <div className="border border-zinc-800 bg-zinc-900/90 p-3.5 backdrop-blur-sm rounded-xs hover:border-[rgb(128,0,0)] transition-colors">
-                  <div className="font-display text-xl sm:text-2xl text-[rgb(180,40,40)] font-extrabold">Eco Guard</div>
+                <div className="border border-zinc-800 bg-zinc-900/90 p-3.5 backdrop-blur-sm rounded-xs hover:border-[#0f4ba1] transition-colors">
+                  <div className="font-display text-xl sm:text-2xl text-[#3b82f6] font-extrabold">Eco Guard</div>
                   <div className="text-[10px] sm:text-[11px] text-zinc-400 uppercase tracking-wider mt-1">Environmental</div>
                 </div>
               </div>
 
               <div className="pt-2 flex flex-wrap gap-3.5">
-                <Button asChild variant="editorial" size="lg" className="bg-[rgb(128,0,0)] hover:bg-[rgb(150,15,15)] text-white font-bold rounded-xs">
+                <Button asChild variant="editorial" size="lg" className="bg-[#0f4ba1] hover:bg-[#1358be] text-white font-bold rounded-xs">
                   <Link to="/hse-quality">
                     Explore HSE & Quality Manual <ArrowRight className="ml-2 h-4 w-4" />
                   </Link>
@@ -488,7 +490,7 @@ function HomePage() {
                 <div className="absolute inset-0 bg-gradient-to-t from-[#080808] via-transparent to-transparent" />
                 <div className="absolute bottom-4 left-4 right-4 flex items-center justify-between border-t border-zinc-800 pt-3 text-xs font-mono">
                   <span className="text-zinc-300 font-semibold">Shield Global QA/QC</span>
-                  <span className="text-[rgb(180,40,40)] flex items-center gap-1.5 font-bold">
+                  <span className="text-[#3b82f6] flex items-center gap-1.5 font-bold">
                     <ShieldCheck className="h-4 w-4" /> 100% Traceability
                   </span>
                 </div>
@@ -505,7 +507,7 @@ function HomePage() {
             <div className="relative overflow-hidden border border-border bg-card p-6 sm:p-10 lg:p-12 shadow-xl rounded-xs">
               <div className="grid gap-6 lg:grid-cols-12 lg:items-center">
                 <div className="space-y-3 lg:col-span-8">
-                  <div className="section-label text-[rgb(128,0,0)] font-bold tracking-[0.18em]">Start Your Technical Tender</div>
+                  <div className="section-label text-[#0f4ba1] font-bold tracking-[0.18em]">Start Your Technical Tender</div>
                   <h2 className="font-display text-2xl sm:text-4xl md:text-5xl font-extrabold text-foreground tracking-tight">
                     Ready to mobilize your next industrial or construction project?
                   </h2>
@@ -519,7 +521,7 @@ function HomePage() {
                     <Button
                       variant="default"
                       size="lg"
-                      className="w-full sm:w-auto bg-[rgb(128,0,0)] hover:bg-[rgb(150,15,15)] text-white py-5 px-7 text-xs uppercase tracking-widest font-bold shadow-lg shadow-[rgba(128,0,0,0.3)] rounded-xs"
+                      className="w-full sm:w-auto bg-[#0f4ba1] hover:bg-[#1358be] text-white py-5 px-7 text-xs uppercase tracking-widest font-bold shadow-lg shadow-[rgba(15,75,161,0.3)] rounded-xs"
                     >
                       Request a Quotation <ArrowRight className="ml-2 h-4 w-4" />
                     </Button>

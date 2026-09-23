@@ -74,17 +74,17 @@ export function SiteShell({ children }: { children: ReactNode }) {
           <div className="technical-container flex items-center justify-between">
             <div className="flex items-center gap-6">
               <span className="flex items-center gap-1.5 text-zinc-300">
-                <Mail className="h-3.5 w-3.5 text-[rgb(128,0,0)]" />
+                <Mail className="h-3.5 w-3.5 text-[#0f4ba1]" />
                 <span>info@shieldglobaltech.ae</span>
               </span>
               <span className="flex items-center gap-1.5 text-zinc-300">
-                <Phone className="h-3.5 w-3.5 text-[rgb(128,0,0)]" />
+                <Phone className="h-3.5 w-3.5 text-[#0f4ba1]" />
                 <span>+971 4 000 0000</span>
               </span>
             </div>
             <div className="flex items-center gap-5 text-[10.5px] uppercase tracking-wider text-zinc-400">
               <span className="flex items-center gap-1 text-zinc-200">
-                <ShieldCheck className="h-3.5 w-3.5 text-[rgb(128,0,0)]" />
+                <ShieldCheck className="h-3.5 w-3.5 text-[#0f4ba1]" />
                 <span>Quality Assured • Safety First • Engineering Excellence</span>
               </span>
               <span className="text-zinc-600">|</span>
@@ -118,7 +118,7 @@ export function SiteShell({ children }: { children: ReactNode }) {
                 {/* Home */}
                 <Link
                   to="/"
-                  className="px-3 py-2 text-[12px] font-bold uppercase tracking-[0.1em] text-slate-700 hover:text-[rgb(128,0,0)] transition-colors"
+                  className="px-3 py-2 text-[12px] font-bold uppercase tracking-[0.1em] text-slate-700 hover:text-[#0f4ba1] transition-colors"
                 >
                   Home
                 </Link>
@@ -126,7 +126,7 @@ export function SiteShell({ children }: { children: ReactNode }) {
                 {/* About Us */}
                 <Link
                   to="/about"
-                  className="px-3 py-2 text-[12px] font-bold uppercase tracking-[0.1em] text-slate-700 hover:text-[rgb(128,0,0)] transition-colors"
+                  className="px-3 py-2 text-[12px] font-bold uppercase tracking-[0.1em] text-slate-700 hover:text-[#0f4ba1] transition-colors"
                 >
                   About Us
                 </Link>
@@ -140,14 +140,14 @@ export function SiteShell({ children }: { children: ReactNode }) {
                   <Link
                     to="/services"
                     className={`inline-flex items-center gap-1 px-3 py-2 text-[12px] font-bold uppercase tracking-[0.1em] transition-colors ${
-                      servicesDropdownOpen ? "text-[rgb(128,0,0)] font-extrabold" : "text-slate-700 hover:text-[rgb(128,0,0)]"
+                      servicesDropdownOpen ? "text-[#0f4ba1] font-extrabold" : "text-slate-700 hover:text-[#0f4ba1]"
                     }`}
                     onClick={() => setServicesDropdownOpen(false)}
                   >
                     Services
                     <ChevronDown
                       className={`h-3.5 w-3.5 transition-transform duration-200 ${
-                        servicesDropdownOpen ? "rotate-180 text-[rgb(128,0,0)]" : "text-slate-500"
+                        servicesDropdownOpen ? "rotate-180 text-[#0f4ba1]" : "text-slate-500"
                       }`}
                     />
                   </Link>
@@ -168,7 +168,7 @@ export function SiteShell({ children }: { children: ReactNode }) {
                           </div>
                           <Link
                             to="/services"
-                            className="text-[11px] uppercase tracking-[0.14em] font-bold text-[rgb(128,0,0)] hover:underline flex items-center gap-1"
+                            className="text-[11px] uppercase tracking-[0.14em] font-bold text-[#0f4ba1] hover:underline flex items-center gap-1"
                           >
                             All Services <ArrowUpRight className="h-3.5 w-3.5" />
                           </Link>
@@ -184,11 +184,11 @@ export function SiteShell({ children }: { children: ReactNode }) {
                                 hash={srv.id}
                                 className="group/item flex items-start gap-3 rounded-xs p-2.5 transition-all hover:bg-slate-50 border border-transparent hover:border-slate-100"
                               >
-                                <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-xs border border-slate-200 bg-slate-50 text-[rgb(128,0,0)] group-hover/item:border-[rgb(128,0,0)] group-hover/item:bg-[rgb(128,0,0)] group-hover/item:text-white transition-all">
+                                <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-xs border border-slate-200 bg-slate-50 text-[#0f4ba1] group-hover/item:border-[#0f4ba1] group-hover/item:bg-[#0f4ba1] group-hover/item:text-white transition-all">
                                   <IconComp className="h-4 w-4" />
                                 </span>
                                 <div className="space-y-0.5">
-                                  <div className="text-[12px] font-bold uppercase tracking-wider text-slate-900 group-hover/item:text-[rgb(128,0,0)] transition-colors">
+                                  <div className="text-[12px] font-bold uppercase tracking-wider text-slate-900 group-hover/item:text-[#0f4ba1] transition-colors">
                                     {srv.title}
                                   </div>
                                   <p className="line-clamp-1 text-[11px] text-slate-500 leading-normal">
@@ -210,7 +210,7 @@ export function SiteShell({ children }: { children: ReactNode }) {
                               setServicesDropdownOpen(false);
                               setQuoteModalOpen(true);
                             }}
-                            className="text-[11px] font-bold uppercase tracking-wider text-[rgb(128,0,0)] hover:underline flex items-center gap-1"
+                            className="text-[11px] font-bold uppercase tracking-wider text-[#0f4ba1] hover:underline flex items-center gap-1"
                           >
                             Request Quotation →
                           </button>
@@ -223,7 +223,7 @@ export function SiteShell({ children }: { children: ReactNode }) {
                 {/* Industries */}
                 <Link
                   to="/industries"
-                  className="px-3 py-2 text-[12px] font-bold uppercase tracking-[0.1em] text-slate-700 hover:text-[rgb(128,0,0)] transition-colors"
+                  className="px-3 py-2 text-[12px] font-bold uppercase tracking-[0.1em] text-slate-700 hover:text-[#0f4ba1] transition-colors"
                 >
                   Industries
                 </Link>
@@ -231,7 +231,7 @@ export function SiteShell({ children }: { children: ReactNode }) {
                 {/* Projects */}
                 <Link
                   to="/projects"
-                  className="px-3 py-2 text-[12px] font-bold uppercase tracking-[0.1em] text-slate-700 hover:text-[rgb(128,0,0)] transition-colors"
+                  className="px-3 py-2 text-[12px] font-bold uppercase tracking-[0.1em] text-slate-700 hover:text-[#0f4ba1] transition-colors"
                 >
                   Projects
                 </Link>
@@ -239,7 +239,7 @@ export function SiteShell({ children }: { children: ReactNode }) {
                 {/* HSE & Quality */}
                 <Link
                   to="/hse-quality"
-                  className="px-3 py-2 text-[12px] font-bold uppercase tracking-[0.1em] text-slate-700 hover:text-[rgb(128,0,0)] transition-colors"
+                  className="px-3 py-2 text-[12px] font-bold uppercase tracking-[0.1em] text-slate-700 hover:text-[#0f4ba1] transition-colors"
                 >
                   HSE & Quality
                 </Link>
@@ -247,7 +247,7 @@ export function SiteShell({ children }: { children: ReactNode }) {
                 {/* Careers */}
                 <Link
                   to="/careers"
-                  className="px-3 py-2 text-[12px] font-bold uppercase tracking-[0.1em] text-slate-700 hover:text-[rgb(128,0,0)] transition-colors"
+                  className="px-3 py-2 text-[12px] font-bold uppercase tracking-[0.1em] text-slate-700 hover:text-[#0f4ba1] transition-colors"
                 >
                   Careers
                 </Link>
@@ -255,19 +255,19 @@ export function SiteShell({ children }: { children: ReactNode }) {
                 {/* Contact Us */}
                 <Link
                   to="/contact"
-                  className="px-3 py-2 text-[12px] font-bold uppercase tracking-[0.1em] text-slate-700 hover:text-[rgb(128,0,0)] transition-colors"
+                  className="px-3 py-2 text-[12px] font-bold uppercase tracking-[0.1em] text-slate-700 hover:text-[#0f4ba1] transition-colors"
                 >
                   Contact Us
                 </Link>
               </nav>
 
-              {/* Rightmost CTA Button: Request a Quotation in rgb(128, 0, 0) */}
+              {/* Rightmost CTA Button: Request a Quotation in #0f4ba1 */}
               <div className="pl-2">
                 <Button
                   onClick={() => setQuoteModalOpen(true)}
                   variant="default"
                   size="sm"
-                  className="inline-flex items-center gap-2 bg-[rgb(128,0,0)] hover:bg-[rgb(148,15,15)] text-white px-4 py-2.5 text-[11px] font-bold uppercase tracking-[0.14em] shadow-md transition-all active:scale-95 shrink-0 rounded-xs"
+                  className="inline-flex items-center gap-2 bg-[#0f4ba1] hover:bg-[#1358be] text-white px-4 py-2.5 text-[11px] font-bold uppercase tracking-[0.14em] shadow-md transition-all active:scale-95 shrink-0 rounded-xs"
                 >
                   Request a Quotation
                   <ArrowRight className="h-3.5 w-3.5" />
@@ -308,7 +308,7 @@ export function SiteShell({ children }: { children: ReactNode }) {
                     className="h-12 sm:h-14 w-auto object-contain"
                   />
                 </Link>
-                <span className="text-[10px] font-bold uppercase tracking-wider text-[rgb(128,0,0)] bg-[rgba(128,0,0,0.08)] px-2.5 py-1 rounded-xs">
+                <span className="text-[10px] font-bold uppercase tracking-wider text-[#0f4ba1] bg-[#0f4ba1]/10 px-2.5 py-1 rounded-xs">
                   Quality Assured
                 </span>
               </div>
@@ -461,7 +461,7 @@ export function SiteShell({ children }: { children: ReactNode }) {
         </motion.main>
       </AnimatePresence>
 
-      {/* Footer - Luxury Deep Black with Red Accents & Compact Spacing */}
+      {/* Footer - Luxury Deep Black with Blue Accents & Compact Spacing */}
       <footer className="border-t border-zinc-800 bg-[#0a0a0a] text-zinc-200">
         <div className="technical-container py-10 lg:py-12">
           <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-4">
