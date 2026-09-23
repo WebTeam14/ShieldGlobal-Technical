@@ -118,7 +118,7 @@ export function SiteShell({ children }: { children: ReactNode }) {
                 {/* Home */}
                 <Link
                   to="/"
-                  className="px-3 py-2 text-[12px] font-bold uppercase tracking-[0.1em] text-slate-700 hover:text-[#0f4ba1] transition-colors"
+                  className="px-3 py-1.5 text-[14px] font-bold uppercase tracking-[0.1em] text-slate-700 border border-transparent hover:border-slate-200 hover:bg-slate-50 hover:text-[#0f4ba1] rounded-sm transition-all duration-150"
                 >
                   Home
                 </Link>
@@ -126,7 +126,7 @@ export function SiteShell({ children }: { children: ReactNode }) {
                 {/* About Us */}
                 <Link
                   to="/about"
-                  className="px-3 py-2 text-[12px] font-bold uppercase tracking-[0.1em] text-slate-700 hover:text-[#0f4ba1] transition-colors"
+                  className="px-3 py-1.5 text-[14px] font-bold uppercase tracking-[0.1em] text-slate-700 border border-transparent hover:border-slate-200 hover:bg-slate-50 hover:text-[#0f4ba1] rounded-sm transition-all duration-150"
                 >
                   About Us
                 </Link>
@@ -139,8 +139,10 @@ export function SiteShell({ children }: { children: ReactNode }) {
                 >
                   <Link
                     to="/services"
-                    className={`inline-flex items-center gap-1 px-3 py-2 text-[12px] font-bold uppercase tracking-[0.1em] transition-colors ${
-                      servicesDropdownOpen ? "text-[#0f4ba1] font-extrabold" : "text-slate-700 hover:text-[#0f4ba1]"
+                    className={`inline-flex items-center gap-1 px-3 py-1.5 text-[14px] font-bold uppercase tracking-[0.1em] border rounded-sm transition-all duration-150 ${
+                      servicesDropdownOpen
+                        ? "text-[#0f4ba1] border-[#0f4ba1]/30 bg-[#0f4ba1]/5"
+                        : "text-slate-700 border-transparent hover:border-slate-200 hover:bg-slate-50 hover:text-[#0f4ba1]"
                     }`}
                     onClick={() => setServicesDropdownOpen(false)}
                   >
@@ -220,54 +222,22 @@ export function SiteShell({ children }: { children: ReactNode }) {
                   </AnimatePresence>
                 </div>
 
-                {/* Industries */}
-                <Link
-                  to="/industries"
-                  className="px-3 py-2 text-[12px] font-bold uppercase tracking-[0.1em] text-slate-700 hover:text-[#0f4ba1] transition-colors"
-                >
-                  Industries
-                </Link>
-
-                {/* Projects */}
-                <Link
-                  to="/projects"
-                  className="px-3 py-2 text-[12px] font-bold uppercase tracking-[0.1em] text-slate-700 hover:text-[#0f4ba1] transition-colors"
-                >
-                  Projects
-                </Link>
-
-                {/* HSE & Quality */}
-                <Link
-                  to="/hse-quality"
-                  className="px-3 py-2 text-[12px] font-bold uppercase tracking-[0.1em] text-slate-700 hover:text-[#0f4ba1] transition-colors"
-                >
-                  HSE & Quality
-                </Link>
-
-                {/* Careers */}
-                <Link
-                  to="/careers"
-                  className="px-3 py-2 text-[12px] font-bold uppercase tracking-[0.1em] text-slate-700 hover:text-[#0f4ba1] transition-colors"
-                >
-                  Careers
-                </Link>
-
                 {/* Contact Us */}
                 <Link
                   to="/contact"
-                  className="px-3 py-2 text-[12px] font-bold uppercase tracking-[0.1em] text-slate-700 hover:text-[#0f4ba1] transition-colors"
+                  className="px-3 py-1.5 text-[14px] font-bold uppercase tracking-[0.1em] text-slate-700 border border-transparent hover:border-slate-200 hover:bg-slate-50 hover:text-[#0f4ba1] rounded-sm transition-all duration-150"
                 >
                   Contact Us
                 </Link>
               </nav>
 
-              {/* Rightmost CTA Button: Request a Quotation in #0f4ba1 */}
-              <div className="pl-2">
+              {/* Sticky CTA Button */}
+              <div className="pl-3 shrink-0">
                 <Button
                   onClick={() => setQuoteModalOpen(true)}
                   variant="default"
                   size="sm"
-                  className="inline-flex items-center gap-2 bg-[#0f4ba1] hover:bg-[#1358be] text-white px-4 py-2.5 text-[11px] font-bold uppercase tracking-[0.14em] shadow-md transition-all active:scale-95 shrink-0 rounded-xs"
+                  className="inline-flex items-center gap-2 bg-[#0f4ba1] hover:bg-[#1358be] text-white px-4 py-2.5 text-[12px] font-bold uppercase tracking-[0.12em] shadow-md transition-all active:scale-95 rounded-sm"
                 >
                   Request a Quotation
                   <ArrowRight className="h-3.5 w-3.5" />
@@ -376,49 +346,13 @@ export function SiteShell({ children }: { children: ReactNode }) {
                   </AnimatePresence>
                 </div>
 
-                {/* Industries */}
-                <Link
-                  to="/industries"
-                  className="flex items-center justify-between border-b border-slate-100 py-3 text-base font-semibold uppercase tracking-wider text-slate-800"
-                >
-                  <span>Industries</span>
-                  <span className="text-[10px] text-slate-400 font-mono">04</span>
-                </Link>
-
-                {/* Projects */}
-                <Link
-                  to="/projects"
-                  className="flex items-center justify-between border-b border-slate-100 py-3 text-base font-semibold uppercase tracking-wider text-slate-800"
-                >
-                  <span>Projects</span>
-                  <span className="text-[10px] text-slate-400 font-mono">05</span>
-                </Link>
-
-                {/* HSE & Quality */}
-                <Link
-                  to="/hse-quality"
-                  className="flex items-center justify-between border-b border-slate-100 py-3 text-base font-semibold uppercase tracking-wider text-slate-800"
-                >
-                  <span>HSE & Quality</span>
-                  <span className="text-[10px] text-slate-400 font-mono">06</span>
-                </Link>
-
-                {/* Careers */}
-                <Link
-                  to="/careers"
-                  className="flex items-center justify-between border-b border-slate-100 py-3 text-base font-semibold uppercase tracking-wider text-slate-800"
-                >
-                  <span>Careers</span>
-                  <span className="text-[10px] text-slate-400 font-mono">07</span>
-                </Link>
-
                 {/* Contact Us */}
                 <Link
                   to="/contact"
                   className="flex items-center justify-between border-b border-slate-100 py-3 text-base font-semibold uppercase tracking-wider text-slate-800"
                 >
                   <span>Contact Us</span>
-                  <span className="text-[10px] text-slate-400 font-mono">08</span>
+                  <span className="text-[10px] text-slate-400 font-mono">04</span>
                 </Link>
               </div>
 
